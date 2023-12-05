@@ -1,6 +1,7 @@
 import 'package:core/data/datasources/database_helper.dart';
 import 'package:core/presentation/bloc/drawer_bloc/drawer_bloc.dart';
-import 'package:ditonton/packages/core/lib/utils/http_ssl_pinning.dart';
+import 'package:core/utils/ssl_pinning.dart';
+import 'package:http/io_client.dart';
 import 'package:tv_series/presentation/bloc/on_the_air_tv/on_the_air_tv_bloc.dart';
 import 'package:tv_series/presentation/bloc/popular_tv/popular_tv_bloc.dart';
 import 'package:tv_series/presentation/bloc/recommendation_tv/recommendation_tv_bloc.dart';
@@ -155,5 +156,5 @@ void init() {
   locator.registerLazySingleton<DatabaseHelper>(() => DatabaseHelper());
 
   // external
-  locator.registerLazySingleton(() => HttpSslPinning.client);
+  locator.registerLazySingletonAsync<IOClient>(() => SslPinning.ioClient);
 }

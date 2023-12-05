@@ -47,13 +47,13 @@ dependencies:
   flutter_bloc: ^8.1.3
 
   core:
-    path: lib/packages/core
+    path: core
   movie:
-    path: lib/packages/movie
+    path: movie
   tv_series:
-    path: lib/packages/tv_series
+    path: tv_series
   about:
-    path: lib/packages/about
+    path: about
   rxdart: ^0.27.7
   firebase_core: ^2.24.0
   firebase_crashlytics: ^3.4.6

@@ -20,7 +20,7 @@ packages:
   about:
     dependency: "direct main"
     description:
-      path: "lib/packages/about"
+      path: about
       relative: true
     source: path
     version: "0.0.1"
@@ -211,7 +211,7 @@ packages:
   core:
     dependency: "direct main"
     description:
-      path: "lib/packages/core"
+      path: core
       relative: true
     source: path
     version: "0.0.1"
@@ -545,7 +545,7 @@ packages:
   movie:
     dependency: "direct main"
     description:
-      path: "lib/packages/movie"
+      path: movie
       relative: true
     source: path
     version: "0.0.1"
@@ -869,7 +869,7 @@ packages:
   tv_series:
     dependency: "direct main"
     description:
-      path: "lib/packages/tv_series"
+      path: tv_series
       relative: true
     source: path
     version: "0.0.1"

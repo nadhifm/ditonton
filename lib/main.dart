@@ -5,6 +5,7 @@ import 'package:core/styles/colors.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:core/utils/utils.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:http/io_client.dart';
 import 'package:provider/provider.dart';
 import 'package:tv_series/presentation/bloc/on_the_air_tv/on_the_air_tv_bloc.dart';
 import 'package:tv_series/presentation/bloc/popular_tv/popular_tv_bloc.dart';
@@ -45,6 +46,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   di.init();
+  await di.locator.isReady<IOClient>();
   runApp(const MyApp());
 }
 
